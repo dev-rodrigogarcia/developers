@@ -1,0 +1,244 @@
+/*
+* TOC
+*
+* 1. Basic styles
+* 2. Layout
+* 3. Button
+* 4. Header e Navbar
+* 5. CSS grid
+* 6. Media Queries
+* 7. Fonts
+*/
+
+/*
+> 1. Basic styles
+*/
+
+/*
+> 2. Layout
+*/
+
+.container {
+    z-index: 5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+
+/*
+> 4. Header e Navbar
+*/
+
+.header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 10px #434343;
+    padding: 10px 0;
+}
+
+.container-navbar {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-box {
+    display: none;
+}
+
+.icon-menu {
+    font-size: 20px;
+}
+
+.navbar-container {
+    padding-bottom: 10px;
+  }
+  
+  .navbar-menu {
+    list-style: none; 
+    display: flex;
+    white-space: nowrap;
+    margin-bottom: 0px;
+  }
+  
+  .navbar-menu li {
+    float: left;
+  }
+  
+  .navbar-menu li a {
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding: 10px 0px;
+    color: #4b4b4b;
+    font-weight: 600;
+  }
+  
+  .navbar-menu .current_page_item a {
+    color: #833c63;
+  }
+  
+  .navbar-menu li ul{
+    position:absolute; 
+    top:45px;
+    display:none;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.97);;
+    border-radius: 5px;
+    box-shadow: 0 7px 20px 5px rgba(0, 0, 0, 0.07);
+    padding: 0px;
+  
+    list-style: none;
+    white-space: nowrap;
+    z-index: 1000;
+  }
+  
+  .navbar-menu li:hover ul, .menu li.over ul {
+    display:block;
+  }
+  
+  .navbar-menu li ul li{
+    float: none;
+  }
+  
+  .navbar-menu li ul li:hover{
+    background-color: rgba(148, 65, 102, 0.11);
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.32);
+    min-width: 44px;
+    min-height: 40px;
+    background-image: url('../images/default_avatar.jpg');
+    background-size: cover;
+  }
+  
+  .user img {
+    width: 44px;
+    border-radius: 100%;
+  }
+
+  .user-box {
+    position:absolute; 
+    top: 54px;
+    width: 350px;
+    min-height: 80px;
+    right: 280px;
+    display:none;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(255, 255, 255, 1);;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    box-shadow: 1px 4px 11px 1px #4d4d4d;
+    padding: 0px;
+  
+    list-style: none;
+    white-space: nowrap;
+    z-index: 1000;
+  }
+
+  .user:hover .user-box {
+    display:block;
+  }
+
+  .user-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px;
+  }
+
+  .user-container .avatar {
+    background-image: url('../images/default_avatar.jpg');
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+
+  .user-container .avatar img {
+    width: 65px;
+    border-radius: 100%;
+  }
+
+  .user-container .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-container .user-info .user-name {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  .user-container .user-info .user-email {
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .user-container .user-info .user-role {
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .user-container .user-info .user-actions {
+    display: flex;
+    padding: 20px 0 0 0;
+    justify-content: space-around;
+  }
+
+  .btn-outline-user {
+    color: #4b3264;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0.25em;
+    border-color: #4b3264;
+    min-width: 85px;
+    font-size: 15px;
+  }
+
+  .btn-outline-user:hover {
+    background: #642B73;
+    background: -webkit-linear-gradient(to left, #C6426E, #642B73);
+    background: linear-gradient(to left, #C6426E, #642B73);
+    color: #fff;
+  }
+
+/*
+> 5. CSS grid
+*/
+
+/*
+> 6. Media Queries
+*/
+
+
+/*
+> 7. Fonts
+*/
